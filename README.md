@@ -1,1 +1,1 @@
-This repository contains files that feed into my website https://sites.google.com/view/sjoshi/home
+This repository contains files that feed into my website sarthakjoshi.net

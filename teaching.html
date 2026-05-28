@@ -1,49 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teaching — Sarthak Joshi</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teaching | Sarthak Joshi</title>
+  <meta name="description" content="Teaching experience and student feedback for Sarthak Joshi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;650;750&family=Lora:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body data-page="teaching">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html">Sarthak Joshi</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="research.html" data-nav="research">Research</a>
+        <a href="teaching.html" data-nav="teaching">Teaching</a>
+        <a href="cv.html" data-nav="cv">CV</a>
+      </nav>
+    </div>
+  </header>
 
-<header>
-  <div class="header-inner">
-    <a href="index.html" class="site-name">Sarthak Joshi</a>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="teaching.html" class="active">Teaching</a>
-      <a href="cv.html">CV</a>
-    </nav>
-  </div>
-</header>
+  <main class="container page">
+    <div class="page-intro">
+      <p class="eyebrow">Teaching</p>
+      <h1>Econometrics and microeconomics teaching.</h1>
+    </div>
 
-<main>
-  <h1>Teaching</h1>
+    <section class="teaching-list" aria-label="Courses">
+      <article class="course">
+        <h2>Advanced Econometric Theory</h2>
+        <p>PhD level, EC9A3, 2019/20</p>
+        <p class="metric">Teaching evaluation: 4.4/5</p>
+      </article>
+      <article class="course">
+        <h2>Introductory Microeconomics</h2>
+        <p>Undergraduate, EC109, 2020-2023</p>
+        <p class="metric">Teaching evaluation: 4.6/5</p>
+        <p>Received Graduate Teaching Assistant Award in 2021, 2022, and 2023.</p>
+      </article>
+    </section>
 
-  <div class="course">
-    <h3>Course Name — Level (Code): Years</h3>
-    <p class="course-meta">Teaching evaluations: X/5</p>
-  </div>
+    <section class="research-section" aria-labelledby="testimonials">
+      <h2 id="testimonials">Student Testimonials</h2>
+      <div class="testimonial-grid">
+        <blockquote>
+          <p>"I have had Sarthak for both terms and he is definitely one of the best seminar tutors, very good at explaining things. Keeps the whole of the class engaged."</p>
+          <cite>Year 1 EC109 student, 2021/22</cite>
+        </blockquote>
+        <blockquote>
+          <p>"Very well prepared and incorporates real world examples in to the seminars. Clear explanations and clearly shows effort to make sure that people understand the questions."</p>
+          <cite>Year 1 EC109 student, 2020/21</cite>
+        </blockquote>
+        <blockquote>
+          <p>"Great sessions and allowed room to ask questions when confused creating a supportive learning environment that I really appreciated."</p>
+        </blockquote>
+      </div>
+    </section>
+  </main>
 
-  <!-- Copy and paste the block above for each course -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year"></span> Sarthak Joshi</span>
+      <a href="mailto:sarthak.joshi@ed.ac.uk">sarthak.joshi@ed.ac.uk</a>
+    </div>
+  </footer>
 
-  <h2>Student Testimonials</h2>
-
-  <blockquote class="testimonial">
-    "Testimonial text here."
-    <cite>— Student description, Year</cite>
-  </blockquote>
-
-  <!-- Copy and paste the block above for each testimonial -->
-
-</main>
-
-<footer>
-  &copy; 2026 Sarthak Joshi
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>

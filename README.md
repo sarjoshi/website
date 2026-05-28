@@ -1,6 +1,6 @@
 # Sarthak Joshi Website
 
-Static website for [sarthakjoshi.net](https://sarthakjoshi.net), hosted from GitHub Pages.
+Static website for [sarthakjoshi.net](https://sarthakjoshi.net), hosted on Cloudflare Pages.
 
 ## Files
 
@@ -10,7 +10,6 @@ Static website for [sarthakjoshi.net](https://sarthakjoshi.net), hosted from Git
 - `cv.html` - CV page
 - `style.css` - site styling
 - `script.js` - active navigation and footer year
-- `CNAME` - custom domain setting for GitHub Pages
 
 PDFs can be hosted directly in this repository and linked from the HTML pages. This is better than Dropbox for stable public website documents because the links are versioned with the site.
 
@@ -23,18 +22,22 @@ python -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
-## GitHub Pages
+## Cloudflare Pages
 
-In GitHub, go to `Settings` -> `Pages` and publish from:
+In Cloudflare, go to `Workers & Pages` and create or open the Pages project for this site.
 
-- Source: `Deploy from a branch`
-- Branch: `main`
-- Folder: `/ (root)`
+- Connect the GitHub repository: `sarjoshi/website`
+- Production branch: `main`
+- Build command: `exit 0`
+- Build output directory: `/`
 
-The custom domain is set by `CNAME` to `sarthakjoshi.net`.
+Cloudflare will redeploy the site whenever the connected `main` branch changes.
 
-## DNS
+## Custom Domain
 
-At your domain registrar, point the apex domain to GitHub Pages with `A` records. You can also point `www` to `sarjoshi.github.io` with a `CNAME` record.
+In the Pages project, go to `Custom domains` and add:
 
-After DNS is set, enable `Enforce HTTPS` in GitHub Pages.
+- `sarthakjoshi.net`
+- optional: `www.sarthakjoshi.net`
+
+Because the domain is on Cloudflare, let Cloudflare create or manage the DNS record for the Pages project. Do not use GitHub Pages DNS records for this setup.

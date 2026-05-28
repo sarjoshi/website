@@ -1,44 +1,40 @@
-# sarthakjoshi.net
+# Sarthak Joshi Website
 
-Personal academic website, hosted on GitHub Pages.
+Static website for [sarthakjoshi.net](https://sarthakjoshi.net), hosted from GitHub Pages.
 
-## How to update
+## Files
 
-1. Edit any `.html` file directly on GitHub (or locally and push).
-2. Changes go live within ~1 minute.
+- `index.html` - home page
+- `research.html` - research page
+- `teaching.html` - teaching page
+- `cv.html` - CV page
+- `style.css` - site styling
+- `script.js` - active navigation and footer year
+- `CNAME` - custom domain setting for GitHub Pages
 
-## File structure
+PDFs can be hosted directly in this repository and linked from the HTML pages. This is better than Dropbox for stable public website documents because the links are versioned with the site.
 
-```
-index.html      ← Home page
-research.html   ← Research papers
-teaching.html   ← Teaching info
-cv.html         ← CV download page
-style.css       ← All styling (shared across pages)
-photo.jpg       ← Your headshot (add this!)
-Sarthak_CV.pdf  ← Your CV PDF (add this!)
-CNAME           ← Tells GitHub to serve on sarthakjoshi.net
-```
+## Local Preview
 
-## Adding a new paper
-
-Open `research.html` and copy-paste this block under the appropriate section:
-
-```html
-<div class="paper">
-  <h3>Your Paper Title</h3>
-  <div class="paper-coauthors">with <a href="https://coauthor-site.com">Coauthor Name</a></div>
-  <div class="paper-links">
-    <a href="https://link-to-pdf.pdf">Working Paper [PDF]</a>
-    <a href="https://registry-link">AEA Registry</a>
-  </div>
-  <p class="paper-status">Revision requested at Journal Name</p>
-  <p class="paper-abstract">
-    Your abstract text here.
-  </p>
-</div>
+```powershell
+cd "C:\Users\sarth\Dropbox\sjoshi-website"
+python -m http.server 8000
 ```
 
-## Setup (one-time)
+Then visit `http://localhost:8000`.
 
-See the deployment instructions provided separately.
+## GitHub Pages
+
+In GitHub, go to `Settings` -> `Pages` and publish from:
+
+- Source: `Deploy from a branch`
+- Branch: `main`
+- Folder: `/ (root)`
+
+The custom domain is set by `CNAME` to `sarthakjoshi.net`.
+
+## DNS
+
+At your domain registrar, point the apex domain to GitHub Pages with `A` records. You can also point `www` to `sarjoshi.github.io` with a `CNAME` record.
+
+After DNS is set, enable `Enforce HTTPS` in GitHub Pages.

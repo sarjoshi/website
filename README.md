@@ -1,6 +1,6 @@
 # Sarthak Joshi Website
 
-Static website for [sarthakjoshi.net](https://sarthakjoshi.net), hosted on Cloudflare Pages.
+Static website for [sarthakjoshi.net](https://sarthakjoshi.net), hosted on GitHub Pages.
 
 ## Files
 
@@ -10,6 +10,7 @@ Static website for [sarthakjoshi.net](https://sarthakjoshi.net), hosted on Cloud
 - `cv.html` - CV page
 - `style.css` - site styling
 - `script.js` - active navigation and footer year
+- `CNAME` - custom domain for GitHub Pages
 
 PDFs can be hosted directly in this repository and linked from the HTML pages. This is better than Dropbox for stable public website documents because the links are versioned with the site.
 
@@ -22,22 +23,23 @@ python -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
-## Cloudflare Pages
+## GitHub Pages
 
-In Cloudflare, go to `Workers & Pages` and create or open the Pages project for this site.
+In GitHub, go to `Settings` -> `Pages` and publish from:
 
-- Connect the GitHub repository: `sarjoshi/website`
-- Production branch: `main`
-- Build command: `exit 0`
-- Build output directory: `/`
+- Source: `Deploy from a branch`
+- Branch: `main`
+- Folder: `/ (root)`
 
-Cloudflare will redeploy the site whenever the connected `main` branch changes.
+The custom domain is set by `CNAME` to `sarthakjoshi.net`.
 
 ## Custom Domain
 
-In the Pages project, go to `Custom domains` and add:
+In GitHub Pages settings, set the custom domain to:
 
 - `sarthakjoshi.net`
-- optional: `www.sarthakjoshi.net`
 
-Because the domain is on Cloudflare, let Cloudflare create or manage the DNS record for the Pages project. Do not use GitHub Pages DNS records for this setup.
+Cloudflare should keep the GitHub Pages DNS records:
+
+- `A` records for `sarthakjoshi.net` pointing to GitHub Pages
+- `CNAME` record for `www` pointing to `sarjoshi.github.io`

@@ -239,6 +239,15 @@ a.paper-title:hover {
   color: var(--text);
 }
 
+.journal-link {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.journal-link:hover {
+  color: var(--text);
+}
+
 .paper-links {
   margin-top: 1.05rem;
   margin-left: 1.25rem;
@@ -248,12 +257,17 @@ a.paper-title:hover {
   margin-left: 1.25rem;
 }
 
-.paper-links a {
+.paper-links a:not(.venue-link):not(.journal-link) {
   font-weight: 400;
 }
 
 .paper-links .venue-link {
   color: var(--accent);
+  font-weight: 700;
+}
+
+.paper-links .journal-link {
+  color: var(--text);
   font-weight: 700;
 }
 

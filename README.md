@@ -35,9 +35,10 @@ The custom domain is set by `CNAME` to `sarthakjoshi.net`.
 
 ## Custom Domain
 
-In GitHub Pages settings, set the custom domain to:
+In the Pages project, go to `Custom domains` and add:
 
 - `sarthakjoshi.net`
+- optional: `www.sarthakjoshi.net`
 
 Cloudflare should keep the GitHub Pages DNS records:
 

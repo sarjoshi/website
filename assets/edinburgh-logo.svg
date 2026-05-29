@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" role="img" aria-labelledby="title">
+  <title id="title">The University of Edinburgh</title>
+  <rect width="640" height="160" fill="none"/>
+  <g transform="translate(18 18)">
+    <circle cx="62" cy="62" r="58" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+    <circle cx="62" cy="62" r="49" fill="none" stroke="#b51f2a" stroke-width="7"/>
+    <path d="M38 37h48v52c0 17-12 28-24 35-12-7-24-18-24-35z" fill="#1b2f5f" stroke="#111111" stroke-width="2"/>
+    <path d="M42 41l40 44M82 41L42 85" stroke="#ffffff" stroke-width="6"/>
+    <rect x="49" y="53" width="26" height="28" rx="2" fill="#ffffff"/>
+    <path d="M62 55v25M53 61h18M53 67h18M53 73h18" stroke="#1b2f5f" stroke-width="2"/>
+    <text x="62" y="15" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" letter-spacing="2" fill="#111111">THE UNIVERSITY</text>
+    <text x="62" y="124" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" letter-spacing="2" fill="#111111">OF EDINBURGH</text>
+  </g>
+  <g transform="translate(155 32)" fill="#111111">
+    <text x="0" y="38" font-family="Georgia, 'Times New Roman', serif" font-size="48" letter-spacing="1">THE UNIVERSITY</text>
+    <text x="0" y="86" font-family="Georgia, 'Times New Roman', serif" font-size="48" letter-spacing="1"><tspan font-style="italic" font-size="42">of</tspan> EDINBURGH</text>
+  </g>
+</svg>

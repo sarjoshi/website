@@ -51,8 +51,7 @@ a:hover {
   align-items: center;
   color: var(--text);
   display: inline-flex;
-  gap: 0.65rem;
-  font-size: 13px;
+  gap: 0.85rem;
   text-decoration: none;
 }
 
@@ -62,8 +61,25 @@ a:hover {
 }
 
 .university-mark img {
-  height: 42px;
+  height: 62px;
   width: auto;
+}
+
+.university-wordmark {
+  display: grid;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 0.92;
+}
+
+.university-wordmark span {
+  display: block;
+  font-size: 23px;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.university-wordmark em {
+  font-size: 20px;
 }
 
 .brand {
@@ -266,6 +282,18 @@ cite {
 
   .brand {
     margin-right: 0;
+  }
+
+  .university-mark img {
+    height: 52px;
+  }
+
+  .university-wordmark span {
+    font-size: 19px;
+  }
+
+  .university-wordmark em {
+    font-size: 17px;
   }
 
   .home-intro {

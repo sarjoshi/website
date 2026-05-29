@@ -62,7 +62,7 @@ a:hover {
 
 .edinburgh-logo {
   display: block;
-  height: 64px;
+  height: 88px;
   width: auto;
 }
 
@@ -219,8 +219,17 @@ a.paper-title:hover {
   color: var(--text);
 }
 
+.venue-link {
+  color: var(--text);
+}
+
 .policy-list {
   padding-left: 1.2rem;
+}
+
+.policy-list li {
+  line-height: 1.45;
+  margin-bottom: 1.05rem;
 }
 
 .collapsible-section {
@@ -286,7 +295,7 @@ cite {
   }
 
   .edinburgh-logo {
-    height: 56px;
+    height: 68px;
   }
 
   .home-intro {

@@ -79,6 +79,7 @@ a:hover {
   display: flex;
   gap: 1.1rem;
   flex-wrap: wrap;
+  margin-left: auto;
 }
 
 .site-nav a {
@@ -200,6 +201,17 @@ li {
   line-height: 1.35;
 }
 
+.paper-meta a,
+.venue-link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.paper-meta a:hover,
+.venue-link:hover {
+  text-decoration: none;
+}
+
 .paper-note {
   color: var(--muted);
   font-size: 15px;
@@ -216,10 +228,6 @@ li {
 }
 
 a.paper-title:hover {
-  color: var(--text);
-}
-
-.venue-link {
   color: var(--text);
 }
 

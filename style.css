@@ -4,7 +4,7 @@
   --muted: #555555;
   --line: #dddddd;
   --accent: #245c9f;
-  --max: 960px;
+  --max: 1120px;
 }
 
 * {
@@ -42,7 +42,9 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 1.35rem;
-  padding: 0.35rem 0 0.4rem;
+  max-width: none;
+  padding: 0.25rem 0.75rem 0.35rem;
+  width: 100%;
 }
 
 .university-mark {
@@ -92,7 +94,7 @@ a:hover {
 }
 
 .page {
-  padding: 2.4rem 0 3rem;
+  padding: 3.7rem 0 5rem;
 }
 
 h1,
@@ -130,19 +132,26 @@ li {
 }
 
 .home-intro {
-  margin-bottom: 4.5rem;
+  margin-bottom: 5.8rem;
   text-align: center;
 }
 
 .home-intro p {
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.05rem;
+}
+
+.home-intro span {
+  color: var(--muted);
+  padding: 0 0.28rem;
 }
 
 .home-layout {
   display: grid;
-  grid-template-columns: 320px minmax(0, 1fr);
-  gap: 3.2rem;
+  grid-template-columns: 360px minmax(0, 1fr);
+  gap: 4.8rem;
   align-items: start;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 .portrait-wrap {
@@ -150,7 +159,7 @@ li {
 }
 
 .portrait {
-  width: 320px;
+  width: 360px;
   max-width: 100%;
   height: auto;
   display: block;
@@ -247,22 +256,8 @@ cite {
   background: #f1f6fc;
 }
 
-.site-footer {
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 13px;
-  padding: 1.2rem 0;
-}
-
-.footer-inner {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
 @media (max-width: 720px) {
-  .header-shell,
-  .footer-inner {
+  .header-shell {
     align-items: flex-start;
     flex-direction: column;
     gap: 0.65rem;
@@ -283,6 +278,6 @@ cite {
   }
 
   .portrait {
-    width: min(320px, 100%);
+    width: min(360px, 100%);
   }
 }

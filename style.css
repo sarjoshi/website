@@ -22,11 +22,12 @@ body {
 
 a {
   color: var(--accent);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #173a59;
+  color: var(--accent);
+  text-decoration: none;
 }
 
 .container {
@@ -190,6 +191,7 @@ li {
 }
 
 .paper-meta,
+.paper-links,
 .paper-note,
 .metric {
   margin-bottom: 0.15rem;
@@ -199,17 +201,6 @@ li {
   color: var(--text);
   font-size: 17px;
   line-height: 1.35;
-}
-
-.paper-meta a,
-.venue-link {
-  color: var(--text);
-  text-decoration: none;
-}
-
-.paper-meta a:hover,
-.venue-link:hover {
-  text-decoration: none;
 }
 
 .paper-note {
@@ -222,13 +213,43 @@ li {
 .paper-title {
   color: var(--text);
   font-weight: 700;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
+  text-decoration: none;
 }
 
 a.paper-title:hover {
   color: var(--text);
+}
+
+.title-authors {
+  font-weight: 400;
+}
+
+.title-authors a {
+  color: var(--accent);
+  font-weight: 400;
+}
+
+.venue-link {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.venue-link:hover {
+  color: var(--text);
+}
+
+.paper-links {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.paper-links a {
+  font-weight: 400;
+}
+
+.paper-links .venue-link {
+  color: var(--accent);
+  font-weight: 700;
 }
 
 .policy-list {

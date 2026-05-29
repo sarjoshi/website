@@ -58,7 +58,7 @@ a:hover {
 
 .university-mark:hover {
   color: var(--text);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .edinburgh-logo {
@@ -92,7 +92,7 @@ a:hover {
 .site-nav a.active,
 .site-nav a:hover {
   color: var(--text);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .page {
@@ -190,14 +190,15 @@ li {
   padding-bottom: 0.1rem;
 }
 
-.paper-meta,
+.paper-heading,
 .paper-links,
 .paper-note,
 .metric {
   margin-bottom: 0.15rem;
 }
 
-.paper-meta {
+.paper-heading,
+.paper-links {
   color: var(--text);
   font-size: 17px;
   line-height: 1.35;
@@ -220,11 +221,11 @@ a.paper-title:hover {
   color: var(--text);
 }
 
-.title-authors {
+.paper-authors {
   font-weight: 400;
 }
 
-.title-authors a {
+.paper-authors a {
   color: var(--accent);
   font-weight: 400;
 }
@@ -239,8 +240,12 @@ a.paper-title:hover {
 }
 
 .paper-links {
-  font-size: 16px;
-  line-height: 1.4;
+  margin-top: 1.05rem;
+  margin-left: 1.25rem;
+}
+
+.paper-note {
+  margin-left: 1.25rem;
 }
 
 .paper-links a {

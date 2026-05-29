@@ -60,26 +60,10 @@ a:hover {
   text-decoration: underline;
 }
 
-.university-mark img {
-  height: 62px;
-  width: auto;
-}
-
-.university-wordmark {
-  display: grid;
-  font-family: Georgia, "Times New Roman", serif;
-  line-height: 0.92;
-}
-
-.university-wordmark span {
+.edinburgh-logo {
   display: block;
-  font-size: 23px;
-  letter-spacing: 0;
-  white-space: nowrap;
-}
-
-.university-wordmark em {
-  font-size: 20px;
+  height: 64px;
+  width: auto;
 }
 
 .brand {
@@ -137,9 +121,9 @@ h2 {
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.1rem;
 }
 
 p,
@@ -196,26 +180,43 @@ li {
 
 .item-list {
   display: grid;
-  gap: 1.35rem;
+  gap: 1.65rem;
 }
 
 .paper,
 .course {
-  padding-bottom: 0.35rem;
+  padding-bottom: 0.1rem;
 }
 
-.paper-status,
-.authors,
+.paper-meta,
+.paper-note,
 .metric {
-  color: var(--muted);
-  font-size: 14px;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.15rem;
 }
 
-.paper-links {
+.paper-meta {
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.paper-note {
   color: var(--muted);
-  font-size: 14px;
-  margin-bottom: 0.55rem;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.paper-title {
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a.paper-title:hover {
+  color: var(--text);
 }
 
 .policy-list {
@@ -284,16 +285,8 @@ cite {
     margin-right: 0;
   }
 
-  .university-mark img {
-    height: 52px;
-  }
-
-  .university-wordmark span {
-    font-size: 19px;
-  }
-
-  .university-wordmark em {
-    font-size: 17px;
+  .edinburgh-logo {
+    height: 56px;
   }
 
   .home-intro {

@@ -69,14 +69,22 @@ a:hover {
 
 .university-wordmark {
   color: var(--text);
+  display: inline-flex;
+  flex-direction: column;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 28px;
-  line-height: 0.92;
+  font-size: 30px;
+  line-height: 0.9;
   text-transform: uppercase;
 }
 
-.university-wordmark::first-line {
-  font-size: 24px;
+.wordmark-line:first-child {
+  font-size: 26px;
+}
+
+.wordmark-line em {
+  font-size: 27px;
+  font-style: italic;
+  text-transform: none;
 }
 
 .brand {
@@ -362,8 +370,12 @@ cite {
     font-size: 22px;
   }
 
-  .university-wordmark::first-line {
+  .wordmark-line:first-child {
     font-size: 19px;
+  }
+
+  .wordmark-line em {
+    font-size: 20px;
   }
 
   .home-intro {

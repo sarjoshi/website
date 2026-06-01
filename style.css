@@ -265,10 +265,18 @@ li {
   margin-left: 1.25rem;
 }
 
+.paper-note-inline {
+  color: var(--text);
+  font-weight: 400;
+  margin-left: 0.25rem;
+}
+
 .paper-title {
   color: var(--text);
   font-weight: 700;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
 
 a.paper-title:hover {

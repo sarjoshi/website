@@ -380,10 +380,14 @@ cite {
   }
 
   .header-shell {
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     gap: 12px;
     padding: 12px 20px;
+  }
+
+  .university-mark {
+    justify-content: center;
   }
 
   .edinburgh-logo {
@@ -400,7 +404,9 @@ cite {
 
   .site-nav {
     gap: 16px;
+    justify-content: center;
     margin-left: 0;
+    width: 100%;
   }
 
   .page,
@@ -409,8 +415,10 @@ cite {
   }
 
   .home-layout {
-    gap: 28px;
+    gap: 24px;
     grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
   }
 
   .portrait-wrap {
@@ -418,20 +426,46 @@ cite {
   }
 
   .portrait {
-    width: min(300px, 100%);
+    width: min(220px, 64vw);
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 34px;
   }
 
   .contact-block {
+    font-size: 15px;
     margin-bottom: 26px;
+    text-align: center;
+  }
+
+  .contact-block p:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 10px;
+    justify-content: center;
+  }
+
+  .contact-block p:first-child span[aria-hidden="true"] {
+    display: none;
+  }
+
+  .address-line {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
   }
 
   .home-copy > p:not(.link-line) {
-    font-size: 18px;
-    max-width: min(330px, calc(100vw - 58px));
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 310px;
+  }
+
+  .link-line {
+    justify-content: center;
   }
 
   .paper {

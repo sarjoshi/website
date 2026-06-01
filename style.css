@@ -245,13 +245,15 @@ li {
 
 .paper-heading,
 .paper-links,
+.paper-meta,
 .paper-note,
 .metric {
   margin-bottom: 0.15rem;
 }
 
 .paper-heading,
-.paper-links {
+.paper-links,
+.paper-meta {
   color: var(--text);
   font-size: 17px;
   line-height: 1.35;
@@ -265,21 +267,20 @@ li {
   margin-left: 1.25rem;
 }
 
-.paper-note-inline {
-  color: var(--text);
+.paper-title {
   font-weight: 400;
-  margin-left: 0.25rem;
+  text-decoration: none;
 }
 
-.paper-title {
-  color: var(--text);
-  font-weight: 700;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
+a.paper-title {
+  color: var(--accent);
 }
 
 a.paper-title:hover {
+  color: var(--accent);
+}
+
+span.paper-title {
   color: var(--text);
 }
 
@@ -304,10 +305,15 @@ a.paper-title:hover {
 
 .paper-links {
   margin-left: 1.25rem;
-  margin-top: 1.05rem;
 }
 
+.paper-meta {
+  margin-left: 1.25rem;
+}
+
+.paper-links a,
 .paper-links a:not(.venue-link):not(.journal-link) {
+  color: var(--accent);
   font-weight: 400;
 }
 

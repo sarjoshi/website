@@ -435,7 +435,17 @@ cite {
   }
 
   .paper {
-    max-width: min(330px, calc(100vw - 58px));
+    margin-left: auto;
+    margin-right: auto;
+    max-width: min(280px, calc(100vw - 70px));
+    text-align: center;
+    width: min(280px, calc(100vw - 70px));
+  }
+
+  .paper-links,
+  .paper-meta,
+  .paper-note {
+    margin-left: 0;
   }
 
   .paper-title,

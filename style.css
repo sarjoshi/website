@@ -246,6 +246,26 @@ li {
   font-weight: 700;
 }
 
+.social-links {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.social-links a {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.35rem;
+}
+
+.social-links svg {
+  display: block;
+  fill: currentColor;
+  height: 1rem;
+  width: 1rem;
+}
+
 .item-list {
   display: grid;
   gap: 1.65rem;

@@ -118,12 +118,12 @@ figure {
   display: flex;
   flex-wrap: wrap;
   gap: 22px;
-  margin-left: auto;
+  margin-left: 0;
 }
 
 .site-nav a {
   color: var(--muted);
-  font-size: 16px;
+  font-size: 17px;
   text-decoration: none;
 }
 
@@ -436,17 +436,11 @@ cite {
   color: var(--muted);
 }
 
-.cv-pages {
-  display: grid;
-  gap: 1.2rem;
-  justify-items: center;
-}
-
-.cv-pages img {
+.cv-frame {
   border: 1px solid var(--line);
   display: block;
-  height: auto;
-  max-width: 900px;
+  height: min(1120px, calc(100vh - 160px));
+  min-height: 720px;
   width: 100%;
 }
 
@@ -612,7 +606,8 @@ cite {
     display: block;
   }
 
-  .cv-pages {
-    gap: 0.9rem;
+  .cv-frame {
+    height: 72vh;
+    min-height: 560px;
   }
 }

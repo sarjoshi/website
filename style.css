@@ -5,8 +5,8 @@
   --muted: #5e6368;
   --line: #d9d9d9;
   --accent: #1f1f1f;
-  --content: 820px;
-  --sidebar: 360px;
+  --content: 760px;
+  --sidebar: 312px;
 }
 
 * {
@@ -66,10 +66,10 @@ div {
   color: var(--text);
   display: inline-flex;
   gap: 12px;
-  position: fixed;
-  right: 28px;
+  position: absolute;
+  right: 34px;
   text-decoration: none;
-  top: 20px;
+  top: 22px;
   z-index: 4;
 }
 
@@ -80,7 +80,7 @@ div {
 
 .edinburgh-logo {
   display: block;
-  height: 56px;
+  height: 48px;
   width: auto;
 }
 
@@ -89,17 +89,17 @@ div {
   display: inline-flex;
   flex-direction: column;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 24px;
+  font-size: 21px;
   line-height: 0.9;
   text-transform: uppercase;
 }
 
 .wordmark-line:first-child {
-  font-size: 21px;
+  font-size: 18px;
 }
 
 .wordmark-line em {
-  font-size: 22px;
+  font-size: 19px;
   font-style: italic;
   text-transform: none;
 }
@@ -110,7 +110,7 @@ div {
   height: 100vh;
   left: 0;
   overflow-y: auto;
-  padding: 42px 34px 34px;
+  padding: 36px 28px 32px;
   position: fixed;
   top: 0;
   width: var(--sidebar);
@@ -121,17 +121,17 @@ div {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 276px;
+  max-width: 236px;
   text-align: center;
 }
 
 .profile-name {
   color: var(--text);
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 700;
   letter-spacing: 0;
   line-height: 1.2;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   text-transform: uppercase;
 }
 
@@ -143,14 +143,14 @@ div {
   border-radius: 8px;
   display: block;
   height: auto;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   width: 100%;
 }
 
 .profile-role,
 .profile-affiliation {
   color: var(--muted);
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.55;
   margin-bottom: 0.35rem;
 }
@@ -158,7 +158,7 @@ div {
 .profile-email {
   font-size: 14px;
   font-weight: 700;
-  margin: 24px 0 26px;
+  margin: 22px 0 24px;
   overflow-wrap: anywhere;
 }
 
@@ -172,6 +172,12 @@ div {
   gap: 0.55rem;
   justify-content: center;
   margin: 0;
+}
+
+.profile-nav span,
+.profile-socials span {
+  color: var(--muted);
+  font-weight: 400;
 }
 
 .profile-socials {
@@ -206,9 +212,10 @@ div {
 
 .site-main {
   margin-left: var(--sidebar);
-  max-width: calc(var(--content) + var(--sidebar));
-  padding: 120px 54px 72px;
-  width: min(calc(100% - var(--sidebar)), calc(var(--content) + 108px));
+  margin-right: auto;
+  max-width: calc(var(--content) + 112px);
+  padding: 82px 56px 72px;
+  width: calc(100% - var(--sidebar));
 }
 
 .intro-section {
@@ -225,23 +232,23 @@ h3 {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 h2 {
   color: var(--accent);
   font-size: 29px;
   font-weight: 500;
-  margin: 44px 0 24px;
+  margin: 38px 0 22px;
 }
 
 h3 {
   border-bottom: 1px solid var(--line);
   font-size: 21px;
   font-weight: 600;
-  margin: 30px 0 17px;
+  margin: 26px 0 14px;
   padding-bottom: 8px;
 }
 
@@ -257,7 +264,7 @@ h3 {
 
 .item-list {
   display: grid;
-  gap: 1.55rem;
+  gap: 1.35rem;
 }
 
 .paper {
@@ -300,7 +307,7 @@ span.paper-title {
 .paper-links,
 .paper-meta,
 .paper-note {
-  margin-left: 1.25rem;
+  margin-left: 1rem;
 }
 
 .paper-links a {
@@ -356,8 +363,8 @@ span.paper-title {
 .cv-frame {
   border: 1px solid var(--line);
   display: block;
-  height: min(1120px, calc(100vh - 180px));
-  min-height: 720px;
+  height: calc(100vh - 220px);
+  min-height: 520px;
   width: 100%;
 }
 
@@ -378,7 +385,7 @@ cite {
   .top-university-mark {
     gap: 7px;
     position: absolute;
-    right: 72px;
+    right: 24px;
     top: 16px;
     z-index: 10;
   }
@@ -396,7 +403,7 @@ cite {
     border-right: 0;
     height: auto;
     overflow: visible;
-    padding: 70px 24px 28px;
+    padding: 54px 24px 24px;
     position: relative;
     width: 100%;
   }
@@ -407,17 +414,25 @@ cite {
 
   .profile-name {
     font-size: 21px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   .profile-photo {
-    margin-bottom: 20px;
-    max-width: 260px;
+    margin-bottom: 16px;
+    max-width: 220px;
   }
 
   .profile-role,
   .profile-affiliation {
     font-size: 15px;
+  }
+
+  .profile-email {
+    margin: 16px 0 18px;
+  }
+
+  .profile-socials {
+    margin-top: 8px;
   }
 
   .site-main {

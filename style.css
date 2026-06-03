@@ -139,6 +139,12 @@ div {
   text-decoration: none;
 }
 
+.site-status {
+  color: var(--muted);
+  font-size: 14px;
+  margin: -14px 0 18px;
+}
+
 .profile-photo {
   border-radius: 8px;
   display: block;

@@ -438,7 +438,7 @@ cite {
   font-style: normal;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 700px) {
   .top-university-mark {
     gap: 7px;
     position: absolute;

@@ -13,10 +13,10 @@ if (year) {
 }
 
 const menuToggle = document.querySelector(".mobile-menu-toggle");
-const profilePanel = document.querySelector(".profile-panel");
-if (menuToggle && profilePanel) {
+const topHeader = document.querySelector(".top-header");
+if (menuToggle && topHeader) {
   menuToggle.addEventListener("click", () => {
-    const isOpen = profilePanel.classList.toggle("menu-open");
+    const isOpen = topHeader.classList.toggle("menu-open");
     menuToggle.setAttribute("aria-expanded", String(isOpen));
   });
 }

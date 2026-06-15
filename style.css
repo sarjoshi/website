@@ -62,9 +62,12 @@ div {
 }
 
 .top-header {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
-  gap: 34px;
+  gap: 32px;
+  height: 86px;
+  justify-content: flex-end;
+  left: var(--sidebar);
   position: absolute;
   right: 34px;
   top: 22px;
@@ -76,6 +79,7 @@ div {
   color: var(--text);
   display: inline-flex;
   gap: 14px;
+  order: 2;
   text-decoration: none;
 }
 
@@ -86,7 +90,7 @@ div {
 
 .edinburgh-logo {
   display: block;
-  height: 64px;
+  height: 72px;
   width: auto;
 }
 
@@ -95,17 +99,17 @@ div {
   display: inline-flex;
   flex-direction: column;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 25px;
+  font-size: 28px;
   line-height: 0.9;
   text-transform: uppercase;
 }
 
 .wordmark-line:first-child {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .wordmark-line em {
-  font-size: 23px;
+  font-size: 25px;
   font-style: italic;
   text-transform: none;
 }
@@ -114,7 +118,8 @@ div {
   align-items: center;
   display: flex;
   gap: 32px;
-  padding-top: 10px;
+  order: 1;
+  padding-top: 22px;
 }
 
 .top-nav a {
@@ -246,7 +251,7 @@ div {
   cursor: pointer;
   display: none;
   height: 36px;
-  margin: 0 0 16px;
+  margin: 0;
   padding: 6px;
   width: 42px;
 }
@@ -470,10 +475,12 @@ cite {
 
 @media (max-width: 700px) {
   .top-header {
-    gap: 7px;
+    display: block;
+    height: auto;
+    left: 0;
     position: absolute;
-    right: 24px;
-    top: 16px;
+    right: 0;
+    top: 0;
     z-index: 10;
   }
 
@@ -481,8 +488,16 @@ cite {
     display: none;
   }
 
+  .top-university-mark {
+    display: flex;
+    gap: 0;
+    position: absolute;
+    right: 22px;
+    top: 14px;
+  }
+
   .edinburgh-logo {
-    height: 48px;
+    height: 52px;
   }
 
   .university-wordmark {
@@ -494,7 +509,7 @@ cite {
     border-right: 0;
     height: auto;
     overflow: visible;
-    padding: 54px 24px 24px;
+    padding: 86px 24px 24px;
     position: relative;
     width: 100%;
   }
@@ -510,6 +525,9 @@ cite {
 
   .mobile-menu-toggle {
     display: block;
+    left: 22px;
+    position: absolute;
+    top: 16px;
   }
 
   .profile-nav {
@@ -517,8 +535,33 @@ cite {
     margin-bottom: 18px;
   }
 
-  .profile-panel.menu-open .mobile-nav {
+  .top-header.menu-open .mobile-nav {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
     display: flex;
+    flex-direction: column;
+    gap: 0;
+    left: 22px;
+    min-width: 116px;
+    padding: 8px 0;
+    position: absolute;
+    top: 54px;
+  }
+
+  .mobile-nav a {
+    color: var(--text);
+    display: block;
+    font-size: 17px;
+    line-height: 1.2;
+    padding: 8px 14px;
+    text-decoration: none;
+  }
+
+  .mobile-nav a.active,
+  .mobile-nav a:hover {
+    color: var(--text);
+    font-weight: 700;
+    text-decoration: none;
   }
 
   .profile-photo {
@@ -536,11 +579,12 @@ cite {
   }
 
   .profile-contact {
-    display: none;
+    display: block;
+    margin-bottom: 18px;
   }
 
   .main-contact {
-    display: block;
+    display: none;
   }
 
   .profile-socials {

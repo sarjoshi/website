@@ -158,12 +158,12 @@ div {
 
 .profile-name {
   color: var(--text);
-  font-size: 21px;
+  font-size: 25px;
   font-weight: 700;
   letter-spacing: 0;
   line-height: 1.2;
   margin-bottom: 22px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .profile-name:hover {
@@ -519,7 +519,7 @@ cite {
   }
 
   .profile-name {
-    font-size: 21px;
+    font-size: 25px;
     margin-bottom: 16px;
   }
 

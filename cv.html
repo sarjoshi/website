@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260603-under-construction1" />
+  <link rel="stylesheet" href="style.css?v=20260615-wide-desktop3" />
 </head>
 <body data-page="cv">
   <a class="top-university-mark" href="https://www.ed.ac.uk/" target="_blank" rel="noreferrer" aria-label="University of Edinburgh">
@@ -23,15 +23,22 @@
     <div class="profile-inner">
       <a class="profile-name" href="/">Sarthak Joshi</a>
       <p class="site-status">(under construction)</p>
-      <img class="profile-photo" src="/assets/preview-headshot.png" alt="Sarthak Joshi" />
-      <p class="profile-role">Lecturer in Economics</p>
-      <p class="profile-affiliation">University of Edinburgh</p>
-      <a class="profile-email" href="mailto:sarthak.joshi@ed.ac.uk">sarthak.joshi@ed.ac.uk</a>
-      <nav class="profile-nav" aria-label="Main">
+      <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="profile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav id="profile-menu" class="profile-nav" aria-label="Main">
         <a href="/" data-nav="home">Home</a>
         <span aria-hidden="true">&gt;</span>
         <a href="/cv.html" data-nav="cv">CV</a>
       </nav>
+      <img class="profile-photo" src="/assets/preview-headshot.png" alt="Sarthak Joshi" />
+      <p class="profile-role">Lecturer in Economics</p>
+      <p class="profile-affiliation">University of Edinburgh</p>
+      <a class="profile-email" href="mailto:sarthak.joshi@ed.ac.uk">sarthak.joshi@ed.ac.uk</a>
+      <p class="profile-contact"><strong>Contact:</strong> Room 3.05, Department of Economics, 31 Buccleuch Pl, Edinburgh EH8 9JS</p>
       <p class="profile-socials">
         <a href="https://linkedin.com/in/sarthak-joshi-554698bb/?skipRedirect=true" target="_blank" rel="noreferrer" aria-label="LinkedIn">
           <svg class="linkedin-mark" viewBox="0 0 24 24" aria-hidden="true">
@@ -59,7 +66,12 @@
         <span aria-hidden="true">|</span>
         <a href="/Sarthak_CV_Sept2025.pdf" download>Download CV</a>
       </div>
-      <iframe class="cv-frame" src="/Sarthak_CV_Sept2025.pdf#view=FitH" title="Sarthak Joshi CV"></iframe>
+      <object class="cv-frame" data="/Sarthak_CV_Sept2025.pdf#view=FitH" type="application/pdf" aria-label="Sarthak Joshi CV">
+        <div class="cv-fallback">
+          <p>The CV preview may not load in this browser.</p>
+          <p><a href="/Sarthak_CV_Sept2025.pdf" target="_blank" rel="noreferrer">Open the PDF</a> or <a href="/Sarthak_CV_Sept2025.pdf" download>download it</a>.</p>
+        </div>
+      </object>
     </section>
   </main>
 

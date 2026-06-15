@@ -11,3 +11,12 @@ const year = document.querySelector("#year");
 if (year) {
   year.textContent = new Date().getFullYear();
 }
+
+const menuToggle = document.querySelector(".mobile-menu-toggle");
+const profilePanel = document.querySelector(".profile-panel");
+if (menuToggle && profilePanel) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = profilePanel.classList.toggle("menu-open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+}

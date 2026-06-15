@@ -61,16 +61,22 @@ div {
   width: 1px;
 }
 
+.top-header {
+  align-items: center;
+  display: flex;
+  gap: 34px;
+  position: absolute;
+  right: 34px;
+  top: 22px;
+  z-index: 4;
+}
+
 .top-university-mark {
   align-items: center;
   color: var(--text);
   display: inline-flex;
-  gap: 12px;
-  position: absolute;
-  right: 34px;
+  gap: 14px;
   text-decoration: none;
-  top: 22px;
-  z-index: 4;
 }
 
 .top-university-mark:hover {
@@ -80,7 +86,7 @@ div {
 
 .edinburgh-logo {
   display: block;
-  height: 48px;
+  height: 64px;
   width: auto;
 }
 
@@ -89,19 +95,39 @@ div {
   display: inline-flex;
   flex-direction: column;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 21px;
+  font-size: 25px;
   line-height: 0.9;
   text-transform: uppercase;
 }
 
 .wordmark-line:first-child {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .wordmark-line em {
-  font-size: 19px;
+  font-size: 23px;
   font-style: italic;
   text-transform: none;
+}
+
+.top-nav {
+  align-items: center;
+  display: flex;
+  gap: 32px;
+  padding-top: 10px;
+}
+
+.top-nav a {
+  color: var(--muted);
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.top-nav a.active,
+.top-nav a:hover {
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .profile-panel {
@@ -198,6 +224,10 @@ div {
 
 .profile-nav {
   margin-bottom: 22px;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .profile-nav span,
@@ -439,12 +469,16 @@ cite {
 }
 
 @media (max-width: 700px) {
-  .top-university-mark {
+  .top-header {
     gap: 7px;
     position: absolute;
     right: 24px;
     top: 16px;
     z-index: 10;
+  }
+
+  .top-nav {
+    display: none;
   }
 
   .edinburgh-logo {
@@ -483,7 +517,7 @@ cite {
     margin-bottom: 18px;
   }
 
-  .profile-panel.menu-open .profile-nav {
+  .profile-panel.menu-open .mobile-nav {
     display: flex;
   }
 

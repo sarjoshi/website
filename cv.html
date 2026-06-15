@@ -8,16 +8,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260615-wide-desktop4" />
+  <link rel="stylesheet" href="style.css?v=20260615-topnav1" />
 </head>
 <body data-page="cv">
-  <a class="top-university-mark" href="https://www.ed.ac.uk/" target="_blank" rel="noreferrer" aria-label="University of Edinburgh">
-    <img class="edinburgh-logo" src="/assets/UoE%20logo.png" alt="The University of Edinburgh" />
-    <span class="university-wordmark" aria-hidden="true">
-      <span class="wordmark-line">The University</span>
-      <span class="wordmark-line"><em>of</em> Edinburgh</span>
-    </span>
-  </a>
+  <header class="top-header">
+    <a class="top-university-mark" href="https://www.ed.ac.uk/" target="_blank" rel="noreferrer" aria-label="University of Edinburgh">
+      <img class="edinburgh-logo" src="/assets/UoE%20logo.png" alt="The University of Edinburgh" />
+      <span class="university-wordmark" aria-hidden="true">
+        <span class="wordmark-line">The University</span>
+        <span class="wordmark-line"><em>of</em> Edinburgh</span>
+      </span>
+    </a>
+    <nav class="top-nav" aria-label="Main">
+      <a href="/" data-nav="home">Home</a>
+      <a href="/cv.html" data-nav="cv">CV</a>
+    </nav>
+  </header>
 
   <aside class="profile-panel" aria-label="Profile">
     <div class="profile-inner">
@@ -27,7 +33,7 @@
         <span></span>
         <span class="sr-only">Menu</span>
       </button>
-      <nav id="profile-menu" class="profile-nav" aria-label="Main">
+      <nav id="profile-menu" class="profile-nav mobile-nav" aria-label="Main">
         <a href="/" data-nav="home">Home</a>
         <span aria-hidden="true">|</span>
         <a href="/cv.html" data-nav="cv">CV</a>

@@ -317,6 +317,10 @@ h1 {
   margin-bottom: 18px;
 }
 
+#home-title {
+  text-align: center;
+}
+
 h2 {
   color: var(--accent);
   font-size: 29px;
@@ -491,17 +495,32 @@ cite {
   }
 
   .top-university-mark {
-    display: block;
-    left: 214px;
+    align-items: center;
+    display: flex;
+    gap: 7px;
+    left: 210px;
     position: absolute;
     right: auto;
     top: 12px;
-    width: 142px;
   }
 
   .edinburgh-logo {
     height: 34px;
-    width: 142px;
+    width: auto;
+  }
+
+  .university-wordmark {
+    display: inline-flex;
+    font-size: 13px;
+    line-height: 0.9;
+  }
+
+  .wordmark-line:first-child {
+    font-size: 11px;
+  }
+
+  .wordmark-line em {
+    font-size: 12px;
   }
 
   .profile-panel {

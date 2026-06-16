@@ -488,8 +488,8 @@ cite {
     display: block;
     height: 64px;
     left: 0;
-    overflow: hidden;
-    position: absolute;
+    overflow: visible;
+    position: fixed;
     right: auto;
     top: 0;
     width: 100vw;
@@ -501,20 +501,39 @@ cite {
   }
 
   .top-university-mark {
-    display: none;
-  }
-
-  .mobile-edinburgh-crest {
-    display: block;
-    height: 34px;
+    align-items: center;
+    display: flex;
+    gap: 14px;
+    justify-content: flex-end;
     position: fixed;
     right: 14px;
     top: 12px;
-    width: 34px;
+    transform: scale(0.48);
+    transform-origin: top right;
+    width: 430px;
     z-index: 20;
   }
 
   .university-wordmark {
+    display: inline-flex;
+    font-size: 28px;
+    line-height: 0.9;
+  }
+
+  .edinburgh-logo {
+    display: block;
+    height: 72px;
+  }
+
+  .wordmark-line:first-child {
+    font-size: 24px;
+  }
+
+  .wordmark-line em {
+    font-size: 25px;
+  }
+
+  .mobile-edinburgh-crest {
     display: none;
   }
 
@@ -559,8 +578,9 @@ cite {
     left: 22px;
     min-width: 116px;
     padding: 8px 0;
-    position: absolute;
+    position: fixed;
     top: 54px;
+    z-index: 21;
   }
 
   .mobile-nav a {

@@ -188,6 +188,7 @@ div {
 .profile-role,
 .profile-affiliation {
   color: var(--muted);
+  display: none;
   font-size: 15px;
   line-height: 1.55;
   margin-bottom: 0.35rem;
@@ -491,14 +492,16 @@ cite {
   .top-header {
     background: #ffffff;
     border-bottom: 1px solid #eeeeee;
-    display: block;
+    display: flex;
     height: 64px;
     left: 0;
+    align-items: center;
     overflow: visible;
+    padding: 0 14px 0 12px;
     position: fixed;
-    right: auto;
+    right: 0;
     top: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 10;
   }
 
@@ -509,34 +512,36 @@ cite {
   .top-university-mark {
     align-items: center;
     display: flex;
-    gap: 14px;
+    gap: 6px;
     justify-content: flex-end;
-    position: fixed;
-    right: 14px;
-    top: 12px;
-    transform: scale(0.48);
-    transform-origin: top right;
-    width: 430px;
+    margin-left: auto;
+    max-width: calc(100vw - 88px);
+    position: static;
+    transform: none;
+    width: auto;
     z-index: 20;
   }
 
   .university-wordmark {
     display: inline-flex;
-    font-size: 28px;
-    line-height: 0.9;
+    font-size: 15px;
+    flex: 0 1 auto;
+    line-height: 0.92;
+    min-width: 0;
   }
 
   .edinburgh-logo {
     display: block;
-    height: 72px;
+    flex: 0 0 auto;
+    height: 36px;
   }
 
   .wordmark-line:first-child {
-    font-size: 24px;
+    font-size: 13px;
   }
 
   .wordmark-line em {
-    font-size: 25px;
+    font-size: 14px;
   }
 
   .mobile-edinburgh-crest {
@@ -565,9 +570,10 @@ cite {
 
   .mobile-menu-toggle {
     display: block;
-    left: 22px;
-    position: absolute;
-    top: 16px;
+    left: auto;
+    margin-right: 10px;
+    position: relative;
+    top: auto;
   }
 
   .profile-nav {

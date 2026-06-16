@@ -64,7 +64,7 @@ div {
 .top-header {
   align-items: flex-start;
   display: flex;
-  gap: 32px;
+  gap: 58px;
   height: 86px;
   justify-content: flex-end;
   left: var(--sidebar);
@@ -158,6 +158,7 @@ div {
 
 .profile-name {
   color: var(--text);
+  display: none;
   font-size: 25px;
   font-weight: 700;
   letter-spacing: 0;
@@ -232,6 +233,10 @@ div {
 }
 
 .mobile-nav {
+  display: none;
+}
+
+.mobile-edinburgh-crest {
   display: none;
 }
 
@@ -318,6 +323,7 @@ h1 {
 }
 
 #home-title {
+  margin-bottom: 34px;
   text-align: center;
 }
 
@@ -495,32 +501,21 @@ cite {
   }
 
   .top-university-mark {
-    align-items: center;
-    display: flex;
-    gap: 7px;
-    left: 210px;
-    position: absolute;
-    right: auto;
-    top: 12px;
+    display: none;
   }
 
-  .edinburgh-logo {
+  .mobile-edinburgh-crest {
+    display: block;
     height: 34px;
-    width: auto;
+    position: fixed;
+    right: 14px;
+    top: 12px;
+    width: 34px;
+    z-index: 20;
   }
 
   .university-wordmark {
-    display: inline-flex;
-    font-size: 13px;
-    line-height: 0.9;
-  }
-
-  .wordmark-line:first-child {
-    font-size: 11px;
-  }
-
-  .wordmark-line em {
-    font-size: 12px;
+    display: none;
   }
 
   .profile-panel {
@@ -538,6 +533,7 @@ cite {
   }
 
   .profile-name {
+    display: block;
     font-size: 25px;
     margin-bottom: 16px;
   }
@@ -643,6 +639,11 @@ cite {
 
   h1 {
     font-size: 34px;
+  }
+
+  #home-title {
+    display: none;
+    margin-bottom: 24px;
   }
 
   h2 {

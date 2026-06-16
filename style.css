@@ -124,7 +124,7 @@ div {
 
 .top-nav a {
   color: var(--muted);
-  font-size: 17px;
+  font-size: 19px;
   text-decoration: none;
 }
 
@@ -450,6 +450,10 @@ span.paper-title {
   color: var(--muted);
 }
 
+.mobile-cv-fallback {
+  display: none;
+}
+
 .cv-frame {
   border: 1px solid var(--line);
   display: block;
@@ -635,13 +639,12 @@ cite {
     width: 100%;
   }
 
-  body[data-page="cv"] .top-header,
   body[data-page="cv"] .profile-panel {
     display: none;
   }
 
   body[data-page="cv"] .site-main {
-    padding: 22px 14px 28px;
+    padding: 86px 14px 28px;
   }
 
   body[data-page="cv"] h1 {
@@ -693,7 +696,22 @@ cite {
   }
 
   .cv-frame {
-    height: calc(100vh - 126px);
-    min-height: 620px;
+    display: none;
+  }
+
+  .mobile-cv-fallback {
+    background: #f7f7f7;
+    border: 1px solid var(--line);
+    color: var(--muted);
+    display: block;
+    font-size: 16px;
+    line-height: 1.45;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    padding: 20px;
+  }
+
+  .mobile-cv-fallback p {
+    margin-bottom: 0.7rem;
   }
 }

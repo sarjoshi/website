@@ -485,6 +485,8 @@ cite {
 
 @media (max-width: 700px) {
   .top-header {
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
     display: block;
     height: 64px;
     left: 0;
@@ -579,7 +581,7 @@ cite {
     min-width: 116px;
     padding: 8px 0;
     position: fixed;
-    top: 54px;
+    top: 64px;
     z-index: 21;
   }
 

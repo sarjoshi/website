@@ -5,12 +5,12 @@ Static website for [sarthakjoshi.net](https://sarthakjoshi.net), hosted on GitHu
 ## Files
 
 - `index.html` - home page
-- `research.html` - research page
-- `teaching.html` - teaching page
 - `cv.html` - CV page
 - `style.css` - site styling
-- `script.js` - active navigation and footer year
+- `script.js` - active navigation and mobile menu
 - `CNAME` - custom domain for GitHub Pages
+- `assets/` - logo and headshot assets
+- `documents/` - hosted paper PDFs
 
 PDFs can be hosted directly in this repository and linked from the HTML pages. This is better than Dropbox for stable public website documents because the links are versioned with the site.
 

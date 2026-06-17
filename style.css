@@ -171,27 +171,12 @@ div {
   text-decoration: none;
 }
 
-.site-status {
-  color: var(--muted);
-  font-size: 14px;
-  margin: -14px 0 18px;
-}
-
 .profile-photo {
   border-radius: 8px;
   display: block;
   height: auto;
   margin-bottom: 16px;
   width: 100%;
-}
-
-.profile-role,
-.profile-affiliation {
-  color: var(--muted);
-  display: none;
-  font-size: 15px;
-  line-height: 1.55;
-  margin-bottom: 0.35rem;
 }
 
 .profile-email {
@@ -217,7 +202,6 @@ div {
   display: none;
 }
 
-.profile-nav,
 .profile-socials {
   align-items: center;
   display: flex;
@@ -229,19 +213,10 @@ div {
   margin: 0;
 }
 
-.profile-nav {
-  margin-bottom: 22px;
-}
-
 .mobile-nav {
   display: none;
 }
 
-.mobile-edinburgh-crest {
-  display: none;
-}
-
-.profile-nav span,
 .profile-socials span {
   color: var(--muted);
   font-weight: 400;
@@ -268,14 +243,6 @@ div {
   height: 2px;
   margin: 5px auto;
   width: 24px;
-}
-
-.profile-nav a {
-  color: var(--text);
-}
-
-.profile-nav a.active {
-  color: var(--accent);
 }
 
 .profile-socials a {
@@ -544,10 +511,6 @@ cite {
     font-size: 14px;
   }
 
-  .mobile-edinburgh-crest {
-    display: none;
-  }
-
   .profile-panel {
     border-bottom: 1px solid #eeeeee;
     border-right: 0;
@@ -574,11 +537,6 @@ cite {
     margin-right: 10px;
     position: relative;
     top: auto;
-  }
-
-  .profile-nav {
-    display: none;
-    margin-bottom: 18px;
   }
 
   .top-header.menu-open .mobile-nav {
@@ -614,11 +572,6 @@ cite {
   .profile-photo {
     margin-bottom: 12px;
     max-width: 212px;
-  }
-
-  .profile-role,
-  .profile-affiliation {
-    font-size: 15px;
   }
 
   .profile-email {

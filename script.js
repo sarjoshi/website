@@ -7,11 +7,6 @@ for (const link of document.querySelectorAll("[data-nav]")) {
   }
 }
 
-const year = document.querySelector("#year");
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
-
 const menuToggle = document.querySelector(".mobile-menu-toggle");
 const topHeader = document.querySelector(".top-header");
 if (menuToggle && topHeader) {
